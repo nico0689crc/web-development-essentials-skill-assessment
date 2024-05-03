@@ -1,58 +1,208 @@
 :root {
-  --primary-color: rgb(0, 167, 111);
-  --text-color: rgb(33, 43, 54);
+  --color-primary: #00A76F;
+
+  --color-gray-100: #F9FAFB;
+  --color-gray-500: #919EAB;
+  --color-gray-600: #637381;
+  
+  --color-text-primary: #212b36;
+  --color-text-secondary: #637381;
+  --color-text-disabled: #919eab;
 }
 
-body,
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1rem 3rem;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-text-primary);
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
 a {
-  color: var(--text-color);
+  color: var(--color-primary);
 }
 
-header,
-main, 
-footer {
-  padding: 0 0.5rem;
+/************************* 
+********  INPUT  ********
+**************************/
+
+.input-text {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-gray-500);
 }
 
-a {
-  text-decoration: none;
-  transition: color 0.2s ease-in;
+.input-text:focus,
+.input-text:focus-visible {
+  border: 1px solid var(--color-primary);
+  outline: none;
 }
 
-a:hover {
-  color: var(--primary-color);
+.input-text--small {
+  font-size: 1.2rem;
+  padding: 0.6rem;
 }
 
-.navbar {
+.input-text--medium {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.input-text--big {
+  font-size: 1.6rem;
+  padding: 1.4rem;
+}
+
+/************************* 
+********  BACKDROP  ********
+**************************/
+
+.backdrop {
+  display: none;
+  position: absolute;
+  background-color: #212b36;
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.backdrop--open {
   display: block;
 }
 
-@media (min-width: 428px) {
-  header,
-  main, 
-  footer {
-    padding: 0 2rem;
+@media screen and (min-width: 700px) { 
+  .backdrop--open {
+    display: none;
   }
+}
 
-  /* NAVBAR */
+/************************* 
+********  NAVBAR  ********
+**************************/
 
-  .navbar {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 100px;
+}
+
+.navbar__logo img {
+  width: 100%;
+}
+
+.navbar__items-container {
+  position: absolute;
+  opacity: 0;
+  background-color: var(--color-gray-100);
+  padding: 2rem;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  z-index: 15;
+  transition: all 0.3s ease-in;
+}
+
+.navbar__items-container--open {
+  right: 0;
+  left: 30%;
+  opacity: 1;
+}
+
+.navbar__toggle-menu-button-open,
+.navbar__toggle-menu-button-close{
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar__toggle-menu-button-open svg,
+.navbar__toggle-menu-button-close svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-gray-500);
+  transition: all 0.2s ease-in;
+}
+
+.navbar__toggle-menu-button-open svg:hover,
+.navbar__toggle-menu-button-close svg:hover { 
+  transform: scale(1.1);
+  color: var(--color-gray-600);
+}
+
+.navbar__items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 0;
+}
+
+.navbar__item {
+  list-style: none;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar__items-container {
     display: block;
+    position: relative;
+    background-color: inherit;
+    padding: 0;
+    top: inherit;
+    bottom: inherit;
+    right: inherit;
+    left: inherit;
+    z-index: inherit;
+    opacity: inherit;
   }
 
-  .navbar .items {
-    display: flex;
-    column-gap: 1rem;
+  .navbar__toggle-menu-button-close {
+    display: none;
   }
 
-  .navbar .items .item {
-    list-style: none;
-    padding: 0.5rem;
-    transition: all 0.2s ease;
+  .navbar__items {
+    flex-direction: row;
+    column-gap: 2rem;
+    margin: 0;
   }
 
-  .navbar .items .item:hover {
-    opacity: 0.1;
-    background-color: var(--primary-color);
+  .navbar__item {
+    padding: 1rem;
+  }
+
+  .navbar__item:hover {
+    background-color: var(--color-primary);
+    opacity: 0.2;
+  }
+
+  .navbar__toggle-menu-button-open,
+  .navbar__toggle-menu-button-close {
+    display: none;
   }
 }
