@@ -16,11 +16,43 @@
   box-sizing: border-box;
 }
 
-header {
-  padding: 1rem 3rem;
+/************************* 
+********  LAYOUT  ********
+**************************/
+
+body,
+header,
+main,
+footer {
+  background-color: var(--color-gray-100);
 }
 
-/* Typography */
+header,
+main,
+footer {
+  padding: 2rem 3rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+main {
+  margin-top: 76px;
+}
+
+footer {
+  border-top: 1px solid var(--color-primary);
+}
+
+/************************* 
+********  TYPOGRAPHY  ********
+**************************/
 
 html {
   font-size: 62.5%;
@@ -70,32 +102,6 @@ a {
 }
 
 /************************* 
-********  BACKDROP  ********
-**************************/
-
-.backdrop {
-  display: none;
-  position: absolute;
-  background-color: #212b36;
-  opacity: 0.5;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
-.backdrop--open {
-  display: block;
-}
-
-@media screen and (min-width: 700px) { 
-  .backdrop--open {
-    display: none;
-  }
-}
-
-/************************* 
 ********  NAVBAR  ********
 **************************/
 
@@ -109,12 +115,8 @@ a {
   width: 100px;
 }
 
-.navbar__logo img {
-  width: 100%;
-}
-
 .navbar__items-container {
-  position: absolute;
+  position: fixed;
   opacity: 0;
   background-color: var(--color-gray-100);
   padding: 2rem;
@@ -127,7 +129,7 @@ a {
 
 .navbar__items-container--open {
   right: 0;
-  left: 30%;
+  left: 0;
   opacity: 1;
 }
 
@@ -144,7 +146,7 @@ a {
 .navbar__toggle-menu-button-close svg {
   width: 3rem;
   height: 3rem;
-  color: var(--color-gray-500);
+  color: var(--color-primary);
   transition: all 0.2s ease-in;
 }
 
@@ -205,4 +207,12 @@ a {
   .navbar__toggle-menu-button-close {
     display: none;
   }
+}
+
+/************************* 
+********  MAIN  ********
+**************************/
+
+main {
+  height: 2000px;
 }
