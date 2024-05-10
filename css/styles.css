@@ -1,11 +1,15 @@
 :root {
-  --color-primary: #00A76F;
+  
+  --color-primary-lighter: #C8FAD6;
+  --color-primary-light: #5BE49B;
+  --color-primary-main: #00A76F;
 
   --color-gray-100: #F9FAFB;
+  --color-gray-200:#919eab29;
   --color-gray-500: #919EAB;
   --color-gray-600: #637381;
   
-  --color-text-primary: #212b36;
+  --color-text-primary: #212B36;
   --color-text-secondary: #637381;
   --color-text-disabled: #919eab;
 }
@@ -20,34 +24,50 @@
 ********  LAYOUT  ********
 **************************/
 
-body,
-header,
-main,
-footer {
-  background-color: var(--color-gray-100);
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
 }
 
 header,
-main,
 footer {
-  padding: 2rem 3rem;
+  background-color: var(--color-gray-200);
+}
+
+header,
+footer,
+main {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 75px;
-  border-bottom: 1px solid var(--color-primary);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+main,
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.main-container {
+  overflow-y: auto;
 }
 
 main {
-  margin-top: 76px;
+  height: 2000px;
 }
 
-footer {
-  border-top: 1px solid var(--color-primary);
+@media screen and (min-width: 900px) {  
+  header,
+  footer,
+  main {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 /************************* 
@@ -61,44 +81,103 @@ html {
 body {
   color: var(--color-text-primary);
   font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 
 /************************* 
 ********  INPUT  ********
 **************************/
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
-.input-text {
-  padding: 1rem;
+.input > .input__start-icon,
+.input > .input__button-action {
+  position: absolute;
+}
+
+.input > .input__start-icon {
+  left: 2rem;
+}
+
+.input > .input__button-action {
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.input > .input__button-action:hover {
+  transform: scale(1.2);
+}
+
+.input > input {
+  border: 0;
+  padding: 2rem;
+  padding-left: 4rem;
+  width: 100%;
+  border-radius: 8px;
+  height: 1.5rem;
+}
+
+.input > input::placeholder {
+  color: var(--color-text-disabled);
+}
+
+.input > input,
+.input > input::placeholder {
   font-size: 1.4rem;
-  border-radius: 0.8rem;
-  border: 1px solid var(--color-gray-500);
 }
 
-.input-text:focus,
-.input-text:focus-visible {
-  border: 1px solid var(--color-primary);
-  outline: none;
+@media screen and (min-width: 900px) {
+  .input > .input__button-action {
+    display: none;
+  }
 }
 
-.input-text--small {
+
+/************************* 
+********  BUTTON  ********
+**************************/
+
+.button {
+  background-color: var(--color-primary-main);
+  border: none;
+  color: var(--color-gray-100);
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 167, 111, 0.24);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button--small {
   font-size: 1.2rem;
   padding: 0.6rem;
 }
 
-.input-text--medium {
-  font-size: 1.4rem;
-  padding: 1rem;
-}
-
-.input-text--big {
+.button--large {
   font-size: 1.6rem;
-  padding: 1.4rem;
+  padding: 1rem;
 }
 
 /************************* 
@@ -108,12 +187,27 @@ a {
 .navbar {
   display: flex;
   justify-content: space-between;
+  column-gap: 5rem;
   align-items: center;
 }
 
-.navbar__logo {
-  width: 100px;
+.navbar__input-search {
+  display: none;
 }
+
+.navbar__input-search--open {
+  display: flex;
+  position: absolute;
+  background-color: #eeeff1;
+  top: 7rem;
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar__logo {}
+
 
 .navbar__items-container {
   position: fixed;
@@ -133,8 +227,15 @@ a {
   opacity: 1;
 }
 
+.navbar__actions-container {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
 .navbar__toggle-menu-button-open,
-.navbar__toggle-menu-button-close{
+.navbar__toggle-menu-button-close,
+.navbar__toggle-search-input-button {
   display: flex;
   border: none;
   background-color: transparent;
@@ -143,17 +244,23 @@ a {
 }
 
 .navbar__toggle-menu-button-open svg,
-.navbar__toggle-menu-button-close svg {
+.navbar__toggle-menu-button-close svg,
+.navbar__toggle-search-input-button svg {
   width: 3rem;
   height: 3rem;
-  color: var(--color-primary);
+  color: var(--color-primary-main);
   transition: all 0.2s ease-in;
 }
 
+.navbar__toggle-search-input-button svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .navbar__toggle-menu-button-open svg:hover,
-.navbar__toggle-menu-button-close svg:hover { 
-  transform: scale(1.1);
-  color: var(--color-gray-600);
+.navbar__toggle-menu-button-close svg:hover,
+.navbar__toggle-search-input-button svg:hover { 
+  transform: scale(1.2);
 }
 
 .navbar__items {
@@ -170,7 +277,36 @@ a {
   list-style: none;
 }
 
-@media screen and (min-width: 700px) {
+.navbar__item > a {
+  text-wrap: nowrap;
+}
+
+.navbar__item a:hover {
+  transition: color 0.15s ease;
+}
+
+.navbar__item a {
+  position: relative;
+}
+
+.navbar__item a:hover,
+.navbar__item.active a {
+  color: var(--color-primary-main);
+}
+
+.navbar__item.active a::before {
+  width: 6px;
+  height: 6px;
+  top: 40%;
+  left: -12px;
+  opacity: 0.64;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  background-color: currentcolor;
+}
+
+@media screen and (min-width: 900px) {
   .navbar__items-container {
     display: block;
     position: relative;
@@ -198,21 +334,30 @@ a {
     padding: 1rem;
   }
 
-  .navbar__item:hover {
-    background-color: var(--color-primary);
-    opacity: 0.2;
+  .navbar__input-search {
+    display: flex;
+    flex-grow: 1;
   }
 
-  .navbar__toggle-menu-button-open,
+  .navbar__input-search--open {
+    position: relative;
+    background-color: transparent;
+    top: inherit;
+    padding: 1rem;
+    left: inherit;
+    right: inherit;
+  }
+
+  .navbar__input-search > input {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .navbar__actions-container {
+    display: none;
+  }
+
   .navbar__toggle-menu-button-close {
     display: none;
   }
-}
-
-/************************* 
-********  MAIN  ********
-**************************/
-
-main {
-  height: 2000px;
 }
