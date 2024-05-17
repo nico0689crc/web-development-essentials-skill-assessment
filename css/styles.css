@@ -427,7 +427,6 @@ a {
   justify-content: center;
 }
 
-
 .footer > .footer__top > .footer__navbar {
   display: flex;
   flex-direction: column;
@@ -439,6 +438,21 @@ a {
   row-gap: 4rem;
 }
 
+
+.footer > .footer__bottom {
+  text-align: center;
+}
+
+.footer > .footer__bottom,
+.footer > .footer__bottom a {
+  font-size: 1.2rem;
+}
+
+.footer > .footer__bottom a {
+  color: var(--color-primary-main);
+  text-decoration-line: underline;
+  line-height: 1.8rem;
+}
 @media screen and (min-width: 900px) {
   .footer > .footer__top {
     flex-direction: row;
