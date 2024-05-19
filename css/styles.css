@@ -302,7 +302,7 @@ a {
 }
 
 .navbar__item a:hover {
-  transition: color 0.15s ease;
+  transition: color 0.2s ease;
 }
 
 .navbar__item a {
