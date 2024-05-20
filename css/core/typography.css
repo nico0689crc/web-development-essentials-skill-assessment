@@ -1,0 +1,42 @@
+/************************* 
+********  TYPOGRAPHY  ********
+**************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-text-primary);
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.navbar__logo {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.4rem;
+  text-wrap: nowrap;
+  color: var(--color-primary-main);
+}
+
+@media screen and (min-width: 1100px) {
+  .navbar__logo {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}

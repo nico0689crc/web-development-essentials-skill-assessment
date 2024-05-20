@@ -1,0 +1,54 @@
+/************************* 
+********  INPUT  ********
+**************************/
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input > .input__start-icon,
+.input > .input__button-action {
+  position: absolute;
+}
+
+.input > .input__start-icon {
+  left: 2rem;
+}
+
+.input > .input__button-action {
+  display: flex;
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.input > .input__button-action:hover {
+  transform: scale(1.2);
+}
+
+.input > input,
+.input > input::placeholder {
+  font-size: 1.4rem;
+}
+
+.input > input {
+  border: 0;
+  padding: 2rem;
+  padding-left: 5rem;
+  width: 100%;
+  border-radius: 8px;
+  height: 1.5rem;
+}
+
+.input > input::placeholder {
+  color: var(--color-text-disabled);
+}
+
+@media screen and (min-width: 1100px) {
+  .input > .input__button-action {
+    display: none;
+  }
+}
