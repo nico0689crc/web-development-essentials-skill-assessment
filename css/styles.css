@@ -1,5 +1,4 @@
 :root {
-  
   --color-primary-lighter: #C8FAD6;
   --color-primary-light: #5BE49B;
   --color-primary-main: #00A76F;
@@ -12,6 +11,7 @@
   --color-text-primary: #212B36;
   --color-text-secondary: #637381;
   --color-text-disabled: #919eab;
+  --color-border: #e8e8e8;
 }
 
 *,

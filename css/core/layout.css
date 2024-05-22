@@ -20,6 +20,10 @@
   padding-right: 3rem;
 }
 
+.main > *:not(.hero) {
+  margin: 3rem 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
