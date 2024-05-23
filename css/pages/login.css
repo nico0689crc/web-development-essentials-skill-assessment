@@ -1,0 +1,51 @@
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login > .login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  min-width: 40rem;
+}
+
+.login-form > .login-form__title,
+.login-form > .login-form__create-account,
+.login-form > .login-form__forgot-password,
+.login-form > .login-form__submit {
+  display: flex;
+}
+
+.login-form > .login-form__title,
+.login-form > .login-form__create-account,
+.login-form > .login-form__submit {
+  justify-content: center;
+}
+
+.login-form > .login-form__forgot-password {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-form > .login-form__title > h1 {
+  color: var(--color-primary-main);
+  font-size: 3.25rem;
+}
+
+.login-form > .login-form__create-account {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.login-form > .login-form__create-account > .create-account__text,
+.login-form > .login-form__create-account > .create-account__link {
+  font-size: 1.4rem;
+}
+
+.login-form > .login-form__create-account > .create-account__link,
+.login-form > .login-form__forgot-password > .forgot-password__link {
+  color: var(--color-primary-main);
+  font-weight: 600;
+}

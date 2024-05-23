@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.input--outline {
+  border: 1px solid var(--color-border);
+  border-radius: 0.8rem;
+}
+
 .input > .input__start-icon,
 .input > .input__button-action {
   position: absolute;
@@ -39,8 +44,12 @@
   padding: 2rem;
   padding-left: 5rem;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   height: 1.5rem;
+}
+
+.input > input.no-icon {
+  padding-left: 2rem;
 }
 
 .input > input::placeholder {
