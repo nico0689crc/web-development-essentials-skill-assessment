@@ -5,15 +5,15 @@
   row-gap: 4rem;
 }
 
-.featured-books h1 {
+.featured-books .featured-books__title {
   color: var(--color-primary-main);
-  margin: 0;
+  font-size: 3.25rem;
 }
 
 .featured-books > .featured-books__list {
   display: grid;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  column-gap: 3rem;
+  row-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 } 
 
@@ -64,5 +64,5 @@
   font-size: 1.3rem;
   color: var(--color-text-secondary);
   font-weight: 200;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
 }
