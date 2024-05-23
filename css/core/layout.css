@@ -20,7 +20,7 @@
   padding-right: 3rem;
 }
 
-.main > *:not(.hero) {
+.main > *:not(.hero, .breadcrumb) {
   margin: 8rem 0;
 }
 

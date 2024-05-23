@@ -1,0 +1,31 @@
+.breadcrumb {
+  display: flex;
+  column-gap: 2rem;
+  margin: 5rem 0;
+}
+
+.breadcrumb > .breadcrumb__link, 
+.breadcrumb > .breadcrumb__current {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.breadcrumb > .breadcrumb__link {
+  color: var(--color-primary-main);
+}
+
+.breadcrumb > .breadcrumb__current {
+  color: var(--color-text-disabled);
+}
+
+.breadcrumb > .breadcrumb__circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb > .breadcrumb__circle-container > .breadcrumb__circle {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: rgb(145, 158, 171);
+}
