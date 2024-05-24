@@ -28,13 +28,13 @@
   box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2), 0px 12px 24px -4px rgba(145, 158, 171, 0.12);
 }
 
-.featured-books__item > .featured-books__image-container {
+.featured-books__item .featured-books__image-container {
   width: 100%;
   height: 25rem;
   margin: 0;
 }
 
-.featured-books__item > .featured-books__image-container > .featured-books__image {
+.featured-books__item .featured-books__image-container > .featured-books__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
