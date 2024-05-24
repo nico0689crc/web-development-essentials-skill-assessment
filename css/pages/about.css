@@ -36,8 +36,59 @@
 
 .about-introduction {
   display: flex;
+  flex-direction: column-reverse;
 }
 
-@media screen and (min-width: 1100px)  {
+.about-introduction > .about-introduction__figure {
+  width: 100%;
+  margin: 0;
+}
 
+.about-introduction > .about-introduction__figure > .about-introduction__image {
+  width: 100%;
+}
+
+.about-introduction > .about-introduction__information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.about-introduction > .about-introduction__information > .about-introduction__title {
+  text-align: center;
+  color: var(--color-primary-main);
+  font-size: 3.2rem;
+}
+
+.about-introduction > .about-introduction__information > .about-introduction__title {
+  text-align: center;
+  color: var(--color-primary-main);
+}
+
+.about-introduction > .about-introduction__information > .about-introduction__content {
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+
+@media screen and (min-width: 1100px)  {
+  .about-introduction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 5rem;
+    flex-direction: row;
+  }
+
+  .about-introduction > .about-introduction__figure {
+    max-width: 60rem;
+  }
+
+  .about-introduction > .about-introduction__information {
+    max-width: 60rem;
+  }
+
+  .about-introduction > .about-introduction__information > .about-introduction__title {
+    font-size: 4.8rem;
+  }
 }
