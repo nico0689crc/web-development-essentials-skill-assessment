@@ -25,6 +25,8 @@
     <!-- Start Page Head Elements  -->
     <!------------------------------->
     <link rel="stylesheet" href="css/pages/contact.css"/>
+    <link rel="stylesheet" href="css/components/hero.css"/>
+    <link rel="stylesheet" href="css/components/breadcrumb.css"/>
     <!----------------------------->
     <!-- End Page Head Elements  -->
     <!----------------------------->
@@ -93,7 +95,49 @@
         <!---------------->
         <!-- Start Main -->
         <!---------------->
-        <h1>Contact Us Page</h1>
+        <section class="hero hero__background hero__background--contact-us">
+          <div class="hero__contact-container">
+            <h2 class="hero__contact-title">Contact Us</h2>
+            <address class="hero__contact-information">
+              <h3><strong>Perth</strong></h3>
+              <ul class="hero__contact-links">
+                <li class="hero__navbar-link"><a href="mailto: name@email.com"><strong>Email:</strong> info@fremantlecitylibrary.com.au</a></li>
+                <li class="hero__navbar-link"><a target="_blank" href="https://maps.app.goo.gl/niryxJ2a4mJBDyK16"><strong>Address:</strong> 251 - 255 Stirling Street, Perth, WA 6000 </a></li>
+                <li class="hero__navbar-link"><a href="tel:(08)94329766"><strong>Phone:</strong> (08) 9432 9766</a></li>
+              </ul>
+            </address>
+          </div>
+        </section>
+        <section class="breadcrumb">
+          <a class="breadcrumb__link" href="/">Home</a>
+          <div class="breadcrumb__circle-container">
+            <span class="breadcrumb__circle"></span>
+          </div>
+          <span class="breadcrumb__current">Contact Us</span>
+        </section>
+        <section class="contact-us">
+          <form class="contact-us-form" method="get" action="/index.html">
+            <div class="contact-us-form__title">
+              <h1>Contact Us</h1>
+            </div>
+            <div class="input input--outline">
+              <input name="name" class="no-icon" type="text" placeholder="Name">
+            </div>
+            <div class="input input--outline">
+              <input name="email" class="no-icon" type="text" placeholder="Email">
+            </div>
+            <div class="input input--outline">
+              <input name="subject" class="no-icon" type="text" placeholder="Subject">
+            </div>
+            <div class="input input--outline input--textarea">
+              <textarea placeholder="Message" id="story" name="story" rows="5"></textarea>
+            </div>
+            <div class="contact-us-form__submit">
+              <button type="submit" class="button">Send</button>
+            </div>
+          </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6771.2236682627245!2d115.86454927573767!3d-31.94429437402283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a52a4b6095db%3A0xdfe4712a1ea419c8!2sNational%20Institute%20of%20Technology!5e0!3m2!1ses!2sau!4v1716520642521!5m2!1ses!2sau" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section> 
         <!---------------->
         <!--- End Main --->
         <!---------------->

@@ -21,6 +21,10 @@
   background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/home/help-you.jpeg);
 }
 
+.hero__background--contact-us {
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/contact/hero.jpeg);
+}
+
 .hero__title, 
 .hero__subtitle {
   margin: 0;
