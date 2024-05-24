@@ -7,7 +7,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  min-width: 40rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .login-form > .login-form__title,

@@ -25,6 +25,8 @@
     <!-- Start Page Head Elements  -->
     <!------------------------------->
     <link rel="stylesheet" href="css/pages/about.css"/>
+    <link rel="stylesheet" href="css/components/hero.css"/>
+    <link rel="stylesheet" href="css/components/breadcrumb.css"/>
     <!----------------------------->
     <!-- End Page Head Elements  -->
     <!----------------------------->
@@ -93,7 +95,27 @@
         <!---------------->
         <!-- Start Main -->
         <!---------------->
-        <h1>About Us Page</h1>
+        <section class="hero hero__background hero__background--about-us">
+          <div class="hero__about-container">
+            <h2 class="hero__about-title">About Us</h2>
+          </div>
+        </section>
+        <section class="breadcrumb">
+          <a class="breadcrumb__link" href="/">Home</a>
+          <div class="breadcrumb__circle-container">
+            <span class="breadcrumb__circle"></span>
+          </div>
+          <span class="breadcrumb__current">About Us</span>
+        </section>
+        <section class="about-introduction">
+          <figure class="about-introduction__figure">
+            <img class="about-introduction__image" src="/assets//images/about/library-1.jpeg" alt="Fremantle City Library">
+          </figure>
+          <div class="about-introduction__information">
+            <h1 class="about-introduction__title">Welcome to Fremantle City Library</h1>
+            <p class="about-introduction__content">At Fremantle City Library, we are passionate about books and the joy they bring to readers of all ages. Our library has been serving the community for over three years, and in that time, we have grown significantly. To continue supporting our readers and to adapt to the digital age, we have created this book review website. Here, you can find detailed reviews, reader comments, and much more about the books in our collection.</p>
+          </div>
+        </section>
         <!---------------->
         <!--- End Main --->
         <!---------------->
