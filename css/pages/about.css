@@ -14,7 +14,7 @@
 .hero__about-container > .hero__about-title {
   color: var(--color-primary-main);
   font-weight: 700;
-  font-size: 6.4rem;
+  font-size: 4rem;
   line-height: 1;
   text-align: center;
 }
@@ -24,6 +24,10 @@
     padding-left: 6rem;
     padding-right: 6rem;
   }  
+
+  .hero__about-container > .hero__about-title {
+    font-size: 6.4rem;
+  }
 
   .hero__about-container > .hero__about-title {
     text-align: inherit;
@@ -46,6 +50,11 @@
 
 .about-introduction > .about-introduction__figure > .about-introduction__image {
   width: 100%;
+}
+
+.about-introduction > .about-introduction__figure,
+.about-introduction > .about-introduction__figure > .about-introduction__image {
+  border-radius: 1rem;
 }
 
 .about-introduction > .about-introduction__information {

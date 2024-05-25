@@ -2,17 +2,16 @@
 ********  INPUT  ********
 **************************/
 
-/* Just for marking criteria requirements */
-.input--outline {
-  border: 1px solid var(--color-border) !important;
-  border-radius: 0.8rem;
-}
-
 .input {
   display: flex;
   position: relative;
-  border: 1px dashed red;
   align-items: center;
+}
+
+/* Just for marking criteria requirements */
+.input--outline {
+  border: 1px solid var(--color-border);
+  border-radius: 0.8rem;
 }
 
 .input--textarea {
