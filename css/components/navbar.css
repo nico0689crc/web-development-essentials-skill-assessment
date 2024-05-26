@@ -19,8 +19,8 @@
   right: 0;
   opacity: 0;
   z-index: 10;
-  -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
 }
 
 .navbar__input-search--open {
@@ -36,8 +36,8 @@
   bottom: 0;
   right: -100%;
   z-index: 15;
-  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
 }
 
 .navbar__items-container--open {
@@ -68,8 +68,8 @@
   width: 3rem;
   height: 3rem;
   color: var(--color-primary-main);
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
 }
 
 .navbar__toggle-search-input-button svg {
@@ -81,6 +81,7 @@
 .navbar__toggle-menu-button-close svg:hover,
 .navbar__toggle-search-input-button svg:hover { 
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 .navbar__items {
@@ -102,8 +103,8 @@
 }
 
 .navbar__item a:hover {
-  -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
 }
 
 .navbar__item a {
