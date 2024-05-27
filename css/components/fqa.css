@@ -13,6 +13,7 @@
 .fqa > .fqa__header > .fqa__title {
   color: var(--color-primary-main);
   font-size: 3.25rem;
+  text-align: center;
 }
 
 .fqa > .fqa__items > .fqa__item {

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 50rem;
+  padding: 0 1rem;
 }
 
 .hero__background {
@@ -23,6 +24,7 @@
 
 .hero__background--contact-us {
   background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/contact/hero.jpeg);
+  background-position-x: right;
 }
 
 .hero__background--about-us {
