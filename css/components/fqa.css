@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 2rem;
 }
 
 .fqa > .fqa__items > .fqa__item > .fqa__item-question > .fqa__item-question-text {
