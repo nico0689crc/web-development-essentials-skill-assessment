@@ -20,6 +20,14 @@
   border-bottom: 1px solid var(--color-border);
   padding: 2rem;
   transition: all 350ms ease-out;
+  cursor: pointer;
+  transition: transform 350ms ease-in;
+  -webkit-transition: -webkit-transform 350ms ease-in;
+}
+
+.fqa > .fqa__items > .fqa__item:hover {
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
 }
 
 .fqa > .fqa__items > .fqa__item.fqa__item--open {
