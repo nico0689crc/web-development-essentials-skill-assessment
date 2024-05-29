@@ -32,6 +32,11 @@
   background-position-x: right;
 }
 
+.hero__background--books {
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/books/hero.jpeg);
+  background-position-x: right;
+}
+
 
 .hero__title, 
 .hero__subtitle {

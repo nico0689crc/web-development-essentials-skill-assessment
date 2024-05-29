@@ -1,0 +1,130 @@
+/************************* 
+********  HERO  ********
+**************************/
+
+.hero__books-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.hero__books-container > .hero__books-title {
+  color: var(--color-primary-main);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+}
+/************************* 
+********  BOOKS LIST  ********
+**************************/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--color-text-primary);
+}
+
+caption {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+thead {
+  background-color: hsl(160deg 100% 33% / 50%);
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid var(--color-primary-main);
+}
+
+tr:nth-of-type(1n) {
+  background-color: hsl(160deg 100% 33% / 30%);
+}
+
+tr:nth-of-type(2n) {
+  background-color: hsl(160deg 100% 33% / 10%);
+}
+
+td:nth-of-type(1) ,
+td:nth-of-type(7) {
+  text-wrap: nowrap;
+}
+
+td:nth-of-type(6) {
+  max-width: 50rem;
+}
+
+td:nth-of-type(7) a{
+  color: var(--color-primary-main);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1099px) {
+  thead {
+    display: none;
+  }
+
+  th, 
+  td {
+    border: none;
+    text-align: left;
+  }
+
+  td {
+    display: grid;
+    border-left: 1px solid var(--color-primary-main);
+    border-right: 1px solid var(--color-primary-main);
+  }
+
+  td::before {
+    font-weight: 700;
+  }
+
+  td:nth-of-type(1){
+    border-top: 1px solid var(--color-primary-main);
+    border-left: 1px solid var(--color-primary-main);
+    border-right: 1px solid var(--color-primary-main);
+  }
+
+  td:nth-of-type(1)::before{
+    content: 'ISBN';
+  }
+
+  td:nth-of-type(2)::before{
+    content: 'Title';
+  }
+
+  td:nth-of-type(3)::before{
+    content: 'Author';
+  }
+
+  td:nth-of-type(4)::before{
+    content: 'Year';
+  }
+
+  td:nth-of-type(5)::before{
+    content: 'Genere';
+  }
+
+  td:nth-of-type(6) {
+    max-width: inherit;
+  }
+
+  td:nth-of-type(6)::before{
+    content: 'Review';
+  }
+
+  td:nth-of-type(7)::before{
+    content: 'Action';
+  }
+}

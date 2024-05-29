@@ -28,6 +28,8 @@
     <!-- Start Page Head Elements  -->
     <!------------------------------->
     <link rel="stylesheet" href="css/pages/books.css" />
+    <link rel="stylesheet" href="css/components/hero.css" />
+    <link rel="stylesheet" href="css/components/breadcrumb.css" />
     <!----------------------------->
     <!-- End Page Head Elements  -->
     <!----------------------------->
@@ -133,7 +135,272 @@
         <!---------------->
         <!-- Start Main -->
         <!---------------->
-        <h1>Books List Page</h1>
+        <section class="hero hero__background hero__background--books">
+          <div class="hero__books-container">
+            <h2 class="hero__books-title">Books</h2>
+          </div>
+        </section>
+        <section class="breadcrumb">
+          <a class="breadcrumb__link" href="/">Home</a>
+          <div class="breadcrumb__circle-container">
+            <span class="breadcrumb__circle"></span>
+          </div>
+          <span class="breadcrumb__current">Books</span>
+        </section>
+        <section class="books-list">
+          <table role="table">
+            <thead role="rowgroup">
+              <tr role="row">
+                <th role="columnheader" scope="col">ISBN</th>
+                <th role="columnheader" scope="col">Title</th>
+                <th role="columnheader" scope="col">Author</th>
+                <th role="columnheader" scope="col">Year</th>
+                <th role="columnheader" scope="col">Genere</th>
+                <th role="columnheader" scope="col">Review</th>
+                <th role="columnheader" scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr role="row">
+                <td role="cell">978-2-16-148478-0</td>
+                <td role="cell">Beautiful Chaos: On Motherhood, Finding Yourself and Overwhelming Love</td>
+                <td role="cell">Jessica Urlichs</td>
+                <td role="cell">2024</td>
+                <td role="cell">Fiction</td>
+                <td role="cell">
+                  Motherhood is messy and beautiful, and hard and humbling. We adore our children, and sometimes we miss ourselves. Beautiful Chaos is a
+                  collection of raw, honest poems about motherhood - capturing everything from pregnancy to school age.
+                </td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-3-16-148410-0</td>
+                <td role="cell">The Great Gatsby</td>
+                <td role="cell">F. Scott Fitzgerald</td>
+                <td role="cell">1925</td>
+                <td role="cell">Fiction</td>
+                <td role="cell">A classic novel of the Jazz Age, capturing the spirit and moral decay of the era.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-452-28423-4</td>
+                <td role="cell">To Kill a Mockingbird</td>
+                <td role="cell">Harper Lee</td>
+                <td role="cell">1960</td>
+                <td role="cell">Fiction</td>
+                <td role="cell">A powerful exploration of racial injustice in the Deep South, seen through the eyes of a young girl.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7356-5</td>
+                <td role="cell">1984</td>
+                <td role="cell">George Orwell</td>
+                <td role="cell">1949</td>
+                <td role="cell">Dystopian</td>
+                <td role="cell">A chilling depiction of a totalitarian regime and the extremes of surveillance and control.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-14-028333-4</td>
+                <td role="cell">Pride and Prejudice</td>
+                <td role="cell">Jane Austen</td>
+                <td role="cell">1813</td>
+                <td role="cell">Romance</td>
+                <td role="cell">A witty and romantic critique of the British landed gentry and societal expectations of the early 19th century.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-316-76948-0</td>
+                <td role="cell">The Catcher in the Rye</td>
+                <td role="cell">J.D. Salinger</td>
+                <td role="cell">1951</td>
+                <td role="cell">Fiction</td>
+                <td role="cell">A thought-provoking novel about teenage rebellion and the struggles of growing up.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-06-112008-4</td>
+                <td role="cell">Brave New World</td>
+                <td role="cell">Aldous Huxley</td>
+                <td role="cell">1932</td>
+                <td role="cell">Dystopian</td>
+                <td role="cell">A satirical novel envisioning a future where technology and conditioning control society.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7357-2</td>
+                <td role="cell">Fahrenheit 451</td>
+                <td role="cell">Ray Bradbury</td>
+                <td role="cell">1953</td>
+                <td role="cell">Dystopian</td>
+                <td role="cell">A dystopian novel about a future where books are banned and 'firemen' burn any that are found.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-375-70270-9</td>
+                <td role="cell">Beloved</td>
+                <td role="cell">Toni Morrison</td>
+                <td role="cell">1987</td>
+                <td role="cell">Historical Fiction</td>
+                <td role="cell">A haunting story of slavery and its lasting effects, told through the experiences of a former slave.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7358-9</td>
+                <td role="cell">Animal Farm</td>
+                <td role="cell">George Orwell</td>
+                <td role="cell">1945</td>
+                <td role="cell">Political Satire</td>
+                <td role="cell">A satirical allegory of Soviet totalitarianism, depicting a group of farm animals who overthrow their human farmer.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-679-64120-2</td>
+                <td role="cell">One Hundred Years of Solitude</td>
+                <td role="cell">Gabriel Garcia Marquez</td>
+                <td role="cell">1967</td>
+                <td role="cell">Magical Realism</td>
+                <td role="cell">An epic tale of the Buendia family in the fictional town of Macondo, blending reality with magical elements.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7359-6</td>
+                <td role="cell">Crime and Punishment</td>
+                <td role="cell">Fyodor Dostoevsky</td>
+                <td role="cell">1866</td>
+                <td role="cell">Philosophical Fiction</td>
+                <td role="cell">A psychological drama exploring the moral dilemmas of a young man who commits murder.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7360-2</td>
+                <td role="cell">The Brothers Karamazov</td>
+                <td role="cell">Fyodor Dostoevsky</td>
+                <td role="cell">1880</td>
+                <td role="cell">Philosophical Fiction</td>
+                <td role="cell">A complex narrative dealing with questions of faith, doubt, and morality through the lives of the Karamazov family.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7361-9</td>
+                <td role="cell">Jane Eyre</td>
+                <td role="cell">Charlotte Brontë</td>
+                <td role="cell">1847</td>
+                <td role="cell">Romance</td>
+                <td role="cell">A novel about the emotional and moral development of an orphaned girl, with strong themes of love and independence.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7362-6</td>
+                <td role="cell">Wuthering Heights</td>
+                <td role="cell">Emily Brontë</td>
+                <td role="cell">1847</td>
+                <td role="cell">Gothic Fiction</td>
+                <td role="cell">A dark and passionate tale of love and revenge on the Yorkshire moors.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7363-3</td>
+                <td role="cell">Moby-Dick</td>
+                <td role="cell">Herman Melville</td>
+                <td role="cell">1851</td>
+                <td role="cell">Adventure</td>
+                <td role="cell">A complex and symbolic narrative about Captain Ahab's obsessive quest to hunt the white whale, Moby Dick.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7364-0</td>
+                <td role="cell">War and Peace</td>
+                <td role="cell">Leo Tolstoy</td>
+                <td role="cell">1869</td>
+                <td role="cell">Historical Fiction</td>
+                <td role="cell">An epic novel detailing the history and philosophy of Russian society during the Napoleonic Wars.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7365-7</td>
+                <td role="cell">The Odyssey</td>
+                <td role="cell">Homer</td>
+                <td role="cell">-800</td>
+                <td role="cell">Epic Poetry</td>
+                <td role="cell">A foundational work of Western literature, recounting the adventures of Odysseus as he returns home from the Trojan War.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7366-4</td>
+                <td role="cell">The Iliad</td>
+                <td role="cell">Homer</td>
+                <td role="cell">-750</td>
+                <td role="cell">Epic Poetry</td>
+                <td role="cell">An epic poem set during the Trojan War, focusing on the hero Achilles.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7367-1</td>
+                <td role="cell">Madame Bovary</td>
+                <td role="cell">Gustave Flaubert</td>
+                <td role="cell">1857</td>
+                <td role="cell">Literary Realism</td>
+                <td role="cell">A critical portrayal of bourgeois society through the tragic story of Emma Bovary's adulterous and financial ruin.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7368-8</td>
+                <td role="cell">The Divine Comedy</td>
+                <td role="cell">Dante Alighieri</td>
+                <td role="cell">1320</td>
+                <td role="cell">Epic Poetry</td>
+                <td role="cell">A monumental work exploring the realms of Hell, Purgatory, and Paradise in a quest for salvation.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7369-5</td>
+                <td role="cell">Les Misérables</td>
+                <td role="cell">Victor Hugo</td>
+                <td role="cell">1862</td>
+                <td role="cell">Historical Fiction</td>
+                <td role="cell">A sweeping tale of social injustice, love, and redemption set in 19th-century France.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7370-1</td>
+                <td role="cell">The Count of Monte Cristo</td>
+                <td role="cell">Alexandre Dumas</td>
+                <td role="cell">1844</td>
+                <td role="cell">Adventure</td>
+                <td role="cell">An epic tale of betrayal, revenge, and redemption, following the fortunes of Edmond Dantès.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7371-8</td>
+                <td role="cell">Ulysses</td>
+                <td role="cell">James Joyce</td>
+                <td role="cell">1922</td>
+                <td role="cell">Modernist</td>
+                <td role="cell">A groundbreaking modernist work, detailing a single day in the life of Leopold Bloom in Dublin.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7372-5</td>
+                <td role="cell">In Search of Lost Time</td>
+                <td role="cell">Marcel Proust</td>
+                <td role="cell">1913</td>
+                <td role="cell">Modernist</td>
+                <td role="cell">A monumental work exploring memory, time, and society through the narrator's recollections of his life.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+              <tr role="row">
+                <td role="cell">978-0-7432-7373-2</td>
+                <td role="cell">The Catcher in the Rye</td>
+                <td role="cell">J.D. Salinger</td>
+                <td role="cell">1951</td>
+                <td role="cell">Fiction</td>
+                <td role="cell">A thought-provoking novel about teenage rebellion and the struggles of growing up.</td>
+                <td role="cell"><a href="/book-detail.html">More details</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
         <!---------------->
         <!--- End Main --->
         <!---------------->
