@@ -1,0 +1,100 @@
+/************************* 
+********  HERO  ********
+**************************/
+
+.hero__book-detail-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.hero__book-detail-container > .hero__book-detail-title {
+  color: var(--color-primary-main);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+}
+
+
+/************************* 
+********  BOOK DETAIL  ********
+**************************/
+
+.book-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 5rem;
+  grid-template-areas:
+    "content" 
+    "figure"
+    "comment"
+    "reviews";
+}
+
+.book-detail > .book-detail__figure {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  width: 100%;
+  grid-area: figure;
+}
+
+.book-detail > .book-detail__figure > .book-detail__image {
+  width: 100%;;
+}
+
+.book-detail > .book-detail__content {
+  grid-area: content;
+}
+
+.book-detail > .book-detail__content > .book-detail__title {
+  text-align: center;
+  color: var(--color-primary-main);
+  font-size: 3.2rem;
+}
+
+.book-detail > .book-detail__content > .book-detail__synopsis {
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.book-detail > .book-detail__comment {
+  grid-area: comment;
+}
+
+.book-detail > .book-detail__reviews-list {
+  grid-area: reviews;
+}
+
+@media screen and (min-width: 1100px) {
+  .book-detail {
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
+    grid-template-areas:
+      "figure content" 
+      "comment comment"
+      "reviews reviews";
+  }
+
+  .book-detail > .book-detail__content {
+    padding: 0 4rem;
+  }
+
+  .book-detail > .book-detail__content > .book-detail__title,
+  .book-detail > .book-detail__content > .book-detail__synopsis {
+    text-align: left;
+  }
+  
+  .book-detail > .book-detail__content > .book-detail__title {
+    font-size: 4.8rem;
+  }
+
+  .book-detail > .book-detail__figure > .book-detail__image {
+    max-width: 50rem;
+  }
+}  

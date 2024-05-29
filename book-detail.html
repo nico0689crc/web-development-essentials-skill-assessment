@@ -28,11 +28,13 @@
     <!-- Start Page Head Elements  -->
     <!------------------------------->
     <link rel="stylesheet" href="css/pages/book-detail.css" />
+    <link rel="stylesheet" href="css/components/hero.css" />
+    <link rel="stylesheet" href="css/components/breadcrumb.css" />
     <!----------------------------->
     <!-- End Page Head Elements  -->
     <!----------------------------->
     <script src="/js/toggle-menu.js" defer></script>
-    <title>The Scarlet Shedder: A Graphic Novel - Web Development Essentials - Skill Assessment</title>
+    <title>Beautiful Chaos: On Motherhood, Finding Yourself and Overwhelming Love</title>
   </head>
   <body class="body">
     <header class="header">
@@ -133,7 +135,179 @@
         <!---------------->
         <!-- Start Main -->
         <!---------------->
-        <h1>Book Detail Page</h1>
+        <section class="breadcrumb">
+          <a class="breadcrumb__link" href="/">Home</a>
+          <div class="breadcrumb__circle-container">
+            <span class="breadcrumb__circle"></span>
+          </div>
+          <span class="breadcrumb__current">Beautiful Chaos: On Motherhood, Finding Yourself and Overwhelming Love</span>
+        </section>
+        <section class="book-detail">
+          <figure class="book-detail__figure">
+            <img class="book-detail__image" src="/assets/images/books/book_4_big.jpg" />
+          </figure>
+          <div class="book-detail__content">
+            <h1 class="book-detail__title">Beautiful Chaos: On Motherhood, Finding Yourself and Overwhelming Love</h1>
+            <p class="book-detail__synopsis">
+              Motherhood is messy and beautiful, and hard and humbling. We adore our children, and sometimes we miss ourselves. Beautiful Chaos is a collection
+              of raw, honest poems about motherhood - capturing everything from pregnancy to school age.
+            </p>
+            <div class="book-detail__informations-list">
+              <div class="book-detail__informations-item">
+                <label>ISBN</label>
+                <label>978-2-16-148478-0</label>
+              </div>
+              <div class="book-detail__informations-item">
+                <label>Author</label>
+                <label>Jessica Urlichs</label>
+              </div>
+              <div class="book-detail__informations-item">
+                <label>Year</label>
+                <label>2024</label>
+              </div>
+              <div class="book-detail__informations-item">
+                <label>Genere</label>
+                <label>Fiction</label>
+              </div>
+            </div>
+          </div>
+          <div class="book-detail__comment">
+            <span class="comment__title">Comments</span>
+            <form class="comment__form" action="/book-detail.html" method="GET">
+              <div class="input input--outline input--textarea">
+                <textarea placeholder="Write some of you comments" rows="5"></textarea>
+              </div>
+              <div class="comment__actions-container">
+                <div class="comment__actions">
+                  <button class="comment__action-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      role="img"
+                      class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--solar"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M22 12.698c-.002 1.47-.013 2.718-.096 3.743c-.097 1.19-.296 2.184-.74 3.009a4.18 4.18 0 0 1-.73.983c-.833.833-1.893 1.21-3.237 1.39C15.884 22 14.2 22 12.053 22h-.106c-2.148 0-3.83 0-5.144-.177c-1.343-.18-2.404-.557-3.236-1.39c-.738-.738-1.12-1.656-1.322-2.795c-.2-1.12-.236-2.512-.243-4.241C2 12.957 2 12.492 2 12v-.054c0-2.148 0-3.83.177-5.144c.18-1.343.557-2.404 1.39-3.236c.832-.833 1.893-1.21 3.236-1.39c1.168-.157 2.67-.175 4.499-.177a.697.697 0 1 1 0 1.396c-1.855.002-3.234.018-4.313.163c-1.189.16-1.906.464-2.436.994S3.72 5.8 3.56 6.99C3.397 8.2 3.395 9.788 3.395 12v.784l.932-.814a2.14 2.14 0 0 1 2.922.097l3.99 3.99a1.86 1.86 0 0 0 2.385.207l.278-.195a2.79 2.79 0 0 1 3.471.209l2.633 2.37c.265-.557.423-1.288.507-2.32c.079-.972.09-2.152.091-3.63a.698.698 0 0 1 1.396 0"
+                      ></path>
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M17.5 11c-2.121 0-3.182 0-3.841-.659C13 9.682 13 8.621 13 6.5c0-2.121 0-3.182.659-3.841C14.318 2 15.379 2 17.5 2c2.121 0 3.182 0 3.841.659C22 3.318 22 4.379 22 6.5c0 2.121 0 3.182-.659 3.841c-.659.659-1.72.659-3.841.659m.75-6.5a.75.75 0 0 0-1.5 0v1.25H15.5a.75.75 0 0 0 0 1.5h1.25V8.5a.75.75 0 0 0 1.5 0V7.25h1.25a.75.75 0 0 0 0-1.5h-1.25z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button class="comment__action-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      role="img"
+                      class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 22a5.86 5.86 0 0 1-6-5.7V6.13A4.24 4.24 0 0 1 10.33 2a4.24 4.24 0 0 1 4.34 4.13v10.18a2.67 2.67 0 0 1-5.33 0V6.92a1 1 0 0 1 1-1a1 1 0 0 1 1 1v9.39a.67.67 0 0 0 1.33 0V6.13A2.25 2.25 0 0 0 10.33 4A2.25 2.25 0 0 0 8 6.13V16.3a3.86 3.86 0 0 0 4 3.7a3.86 3.86 0 0 0 4-3.7V6.13a1 1 0 1 1 2 0V16.3a5.86 5.86 0 0 1-6 5.7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button class="comment__action-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
+                      role="img"
+                      class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m5 9a5 5 0 0 1-10 0Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <button type="submit" class="button">Comment</button>
+              </div>
+            </form>
+          </div>
+          <div class="book-detail__reviews-list">
+            <div class="book-detail__review-item">
+              <figure class="review-item__avatar-figure">
+                <img class="review-item__avatar-image" src="assets/images/avatars/avatar_1.jpg" alt="Jayvion Simon" />
+              </figure>
+              <section class="review-item__comment">
+                <h3 class="review-item__username">Jayvion Simon</h3>
+                <time class="review-item__date">10 May 2024</time>
+                <p class="review-item__comment">
+                  above important my try tube president disease earn border produce offer natural pressure shall nation table remain sheet explanation onto
+                  metal nearby dust typeShe eagerly opened the gift, her eyes sparkling with excitement.
+                </p>
+              </section>
+            </div>
+            <div class="book-detail__review-item">
+              <figure class="review-item__avatar-figure">
+                <img class="review-item__avatar-image" src="assets/images/avatars/avatar_2.jpg" alt="Lucian Obrien" />
+              </figure>
+              <section class="review-item__comment">
+                <h3 class="review-item__username">Lucian Obrien</h3>
+                <time class="review-item__date">12 May 2024</time>
+                <p class="review-item__comment">
+                  when clear bread even boat he those size design terrible chest aside history steam lady package pond put hay mainly slave after unit value
+                </p>
+              </section>
+            </div>
+            <div class="book-detail__review-item">
+              <figure class="review-item__avatar-figure">
+                <img class="review-item__avatar-image" src="assets/images/avatars/avatar_3.jpg" alt="Lainey Davidson" />
+              </figure>
+              <section class="review-item__comment">
+                <h3 class="review-item__username">Lainey Davidson</h3>
+                <time class="review-item__date">10 June 2024</time>
+                <p class="review-item__comment">
+                  symbol refer did guide different under information raise actually president favorite having becoming represent accept do box practice section
+                  art therefore fighting check pole
+                </p>
+              </section>
+            </div>
+            <div class="book-detail__review-item">
+              <figure class="review-item__avatar-figure">
+                <img class="review-item__avatar-image" src="assets/images/avatars//avatar_4.jpg" alt="Deja Brady" />
+              </figure>
+              <section class="review-item__comment">
+                <h3 class="review-item__username">Deja Brady</h3>
+                <time class="review-item__date">15 April 2024</time>
+                <p class="review-item__comment">
+                  noted tell party television bottle east sister bow winter about mountain itself fact drive composed universe world happy colony science hope
+                  structure then bark
+                </p>
+              </section>
+            </div>
+            <div class="book-detail__review-item">
+              <figure class="review-item__avatar-figure">
+                <img class="review-item__avatar-image" src="assets/images/avatars/avatar_5.jpg" alt="Cristopher Cardenas" />
+              </figure>
+              <section class="review-item__comment">
+                <h3 class="review-item__username">Cristopher Cardenas</h3>
+                <time class="review-item__date">28 May 2024</time>
+                <p class="review-item__comment">
+                  forty not driving changing parent giving putting tropical jack coat fastened tune composition cover day depth completely wire wrapped great
+                  every fun fed bean
+                </p>
+              </section>
+            </div>
+          </div>
+        </section>
         <!---------------->
         <!--- End Main --->
         <!---------------->

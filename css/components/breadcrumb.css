@@ -18,6 +18,11 @@
   color: var(--color-text-disabled);
   cursor: default;
   pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .breadcrumb > .breadcrumb__circle-container {
