@@ -38,70 +38,83 @@
 ********  INTRODUCTION  ********
 **************************/
 
-.about-introduction {
+.about-introduction,
+.about-our-journey {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.about-introduction > .about-introduction__figure {
+.about-introduction > .about-introduction__figure,
+.about-our-journey > .about-our-journey__figure {
   width: 100%;
   margin: 0;
 }
 
-.about-introduction > .about-introduction__figure > .about-introduction__image {
+.about-introduction > .about-introduction__figure > .about-introduction__image,
+.about-our-journey > .about-our-journey__figure > .about-our-journey__iframe {
   width: 100%;
 }
 
 .about-introduction > .about-introduction__figure,
-.about-introduction > .about-introduction__figure > .about-introduction__image {
+.about-introduction > .about-introduction__figure > .about-introduction__image,
+.about-our-journey > .about-our-journey__figure,
+.about-our-journey > .about-our-journey__figure > .about-our-journey__iframe {
   border-radius: 1rem;
 }
 
-.about-introduction > .about-introduction__information {
+.about-introduction > .about-introduction__information,
+.about-our-journey > .about-our-journey__information {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
 }
 
-.about-introduction > .about-introduction__information > .about-introduction__title {
+.about-introduction > .about-introduction__information > .about-introduction__title,
+.about-our-journey > .about-our-journey__information > .about-our-journey__title {
   text-align: center;
   color: var(--color-primary-main);
   font-size: 3.2rem;
 }
 
-.about-introduction > .about-introduction__information > .about-introduction__title {
-  text-align: center;
-  color: var(--color-primary-main);
-}
-
-.about-introduction > .about-introduction__information > .about-introduction__content {
+.about-introduction > .about-introduction__information > .about-introduction__content,
+.about-our-journey > .about-our-journey__information > .about-our-journey__content {
   text-align: center;
   color: var(--color-text-secondary);
 }
 
 
 @media screen and (min-width: 1100px)  {
-  .about-introduction {
+  .about-introduction,
+  .about-our-journey {
     display: flex;
     justify-content: center;
     column-gap: 5rem;
+  }
+
+  .about-introduction {
     flex-direction: row;
   }
 
-  .about-introduction > .about-introduction__figure {
+  .about-our-journey { 
+    flex-direction: row-reverse;
+  }
+
+  .about-introduction > .about-introduction__figure,
+  .about-introduction > .about-introduction__information,
+  .about-our-journey > .about-our-journey__figure,
+  .about-our-journey > .about-our-journey__information {
     max-width: 60rem;
   }
 
-  .about-introduction > .about-introduction__information {
-    max-width: 60rem;
-  }
-
-  .about-introduction > .about-introduction__information > .about-introduction__title {
+  .about-introduction > .about-introduction__information > .about-introduction__title,
+  .about-our-journey > .about-our-journey__information > .about-our-journey__title {
     font-size: 4.8rem;
   }
 
   .about-introduction > .about-introduction__information > .about-introduction__title,
-  .about-introduction > .about-introduction__information > .about-introduction__content {
+  .about-introduction > .about-introduction__information > .about-introduction__content,
+  .about-our-journey > .about-our-journey__information > .about-our-journey__title,
+  .about-our-journey > .about-our-journey__information > .about-our-journey__content {
     text-align: left;
   }
 }
