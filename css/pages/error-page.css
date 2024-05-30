@@ -1,0 +1,72 @@
+.error-page {
+  display: grid;
+  row-gap: 10rem;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "figure" 
+    "content";
+}
+
+.error-page > .error-page__figure {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  grid-area: figure;
+}
+.error-page > .error-page__figure > .error-page__image {
+  max-width: 50rem;
+  width: 100%;
+}
+
+.error-page > .error-page__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+  grid-area: content;
+}
+.error-page > .error-page__content a {
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--color-primary-main);
+}
+
+.error-page > .error-page__content > .error-page__title {
+  color: var(--color-primary-main);
+  text-align: center;
+  font-size: 3.2rem;
+}
+.error-page > .error-page__content > .error-page__subtitle {
+  color: var(--color-primary-main);
+  text-align: center;
+  font-size: 3rem;
+}
+.error-page > .error-page__content > .error-page__text {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+}
+
+.error-page > .error-page__content > .error-page__solutions-list > .error-page__solution-item {
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1100px) {
+  .error-page {
+    row-gap: inherit;
+    grid-template-columns: 60rem 1fr;
+    grid-template-areas: "figure content";
+    column-gap: 10rem;
+  }
+
+  .error-page > .error-page__content > .error-page__title {
+    font-size: 4.8rem;
+  }
+
+  .error-page > .error-page__content > .error-page__text {
+    text-align: left;
+  }
+
+}

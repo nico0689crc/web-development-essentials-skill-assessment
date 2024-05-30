@@ -31,7 +31,7 @@
     <!------------------------------->
     <!-- Start Page Head Elements  -->
     <!------------------------------->
-    <link rel="stylesheet" href="css/pages/not-found-page.css" />
+    <link rel="stylesheet" href="css/pages/error-page.css" />
     <!----------------------------->
     <!-- End Page Head Elements  -->
     <!----------------------------->
@@ -92,7 +92,7 @@
               <a href="/">Home</a>
             </li>
             <li class="navbar__item">
-              <a href="/books.html">Books</a>
+              <a href="/books">Books</a>
             </li>
             <li class="navbar__item">
               <a href="/about.html">About Us</a>
@@ -138,22 +138,24 @@
         <!-- Start Main -->
         <!---------------->
         <section class="error-page">
-          <figure>
-            <img src="/assets/images/error/error.svg" />
+          <figure class="error-page__figure">
+            <img class="error-page__image" src="/assets/images/not-found/not-found.svg" alt="Not found" />
           </figure>
           <div class="error-page__content">
-            <h1>Oops! Something Went Wrong.</h1>
-            <h2>404 Error - Page Not Found</h2>
-            <p>We couldn't find the page you were looking for. It might have been removed, renamed, or didn't exist in the first place.</p>
-            <p>Here are a few options to get you back on track:</p>
-            <ul>
-              <li>Check the URL: Make sure there are no typos.</li>
-              <li>Go Back: Use your browser's back button to return to the previous page.</li>
-              <li>Visit Our Homepage: <a href="/">Go to Homepage</a></li>
+            <h1 class="error-page__title">Oops! Something Went Wrong</h1>
+            <h2 class="error-page__subtitle">404 Error - Page Not Found</h2>
+            <p class="error-page__text">
+              We couldn't find the page you were looking for. It might have been removed, renamed, or didn't exist in the first place.
+            </p>
+            <p class="error-page__text">Here are a few options to get you back on track:</p>
+            <ul class="error-page__solutions-list">
+              <li class="error-page__solution-item">Check the URL: Make sure there are no typos.</li>
+              <li class="error-page__solution-item">Go Back: Use your browser's back button to return to the previous page.</li>
+              <li class="error-page__solution-item">Visit Our Homepage: <a href="/">Go to Homepage</a></li>
             </ul>
-            <p>
+            <p class="error-page__text">
               Still need help? Contact our support team a
-              <a target="_blank" href="https://maps.app.goo.gl/niryxJ2a4mJBDyK16">support@fremantlecitylibrary.com.au</a>
+              <a href="mailto: support@fremantlecitylibrary.com.au">support@fremantlecitylibrary.com.au</a>
             </p>
           </div>
         </section>
@@ -248,7 +250,7 @@
               <h2 class="footer__navbar-title">Fremantle City Library</h2>
               <ul class="footer__navbar-links">
                 <li class="footer__navbar-link"><a href="/">Home</a></li>
-                <li class="footer__navbar-link"><a href="/books.html">Books</a></li>
+                <li class="footer__navbar-link"><a href="/books">Books</a></li>
                 <li class="footer__navbar-link"><a href="/about.html">About us</a></li>
                 <li class="footer__navbar-link"><a href="/contact.html">Contact us</a></li>
               </ul>
