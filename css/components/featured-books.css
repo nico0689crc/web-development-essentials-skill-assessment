@@ -5,8 +5,27 @@
   row-gap: 4rem;
 }
 
+/* 
+  
+  In CSS, selector specificity is a mechanism to determine which styles are applied to an element when 
+  multiple conflicting styles are defined. It's represented by a tuple of three values: (a, b, c), where:
+
+    a represents the number of ID selectors
+    b represents the number of class selectors, attribute selectors, and pseudo-classes
+    c represents the number of element selectors and pseudo-elements
+
+  In this case, "Selector Specificity: (0, 2, 0)" would win because it has a higher specificity in 
+  the second position (b) compared to "Selector Specificity: (0, 1, 1)". The comparison is done from 
+  left to right in the tuple, and the second value (b) takes precedence over the third value (c). 
+  So, the selector with more class selectors, attribute selectors, and pseudo-classes wins. 
+*/
+
+.featured-books h1 {
+  color: var(--color-primary-main) !important;
+}
+
 .featured-books .featured-books__title {
-  color: var(--color-primary-main);
+  color: red;
   font-size: 3.25rem;
   text-align: left;
 }
