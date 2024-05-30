@@ -36,6 +36,11 @@
     "reviews";
 }
 
+.book-detail > .book-detail__figure,
+.book-detail > .book-detail__figure > .book-detail__image {
+  border-radius: 2rem;
+}
+
 .book-detail > .book-detail__figure {
   display: flex;
   justify-content: center;
@@ -220,6 +225,7 @@
   
   .book-detail > .book-detail__content > .book-detail__title {
     font-size: 4.8rem;
+    text-align: left;
   }
 
   .book-detail > .book-detail__figure > .book-detail__image {
