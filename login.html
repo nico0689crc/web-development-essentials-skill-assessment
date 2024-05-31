@@ -160,10 +160,18 @@
               <a class="create-account__link" href="#">Create an account</a>
             </div>
             <div class="input input--outline">
-              <input name="email" class="no-icon" type="email" placeholder="Email" />
+              <input name="email" class="no-icon" type="email" required placeholder="Email" />
             </div>
             <div class="input input--outline">
-              <input name="password" class="no-icon" type="password" placeholder="Password" />
+              <input
+                name="password"
+                class="no-icon"
+                type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required
+                placeholder="Password"
+              />
             </div>
             <div class="login-form__forgot-password">
               <a class="forgot-password__link" href="#">Forgot password?</a>
