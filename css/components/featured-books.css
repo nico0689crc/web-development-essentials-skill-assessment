@@ -74,7 +74,7 @@
 .featured-books__item .featured-books__title {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--color-text-primary) !important;
   padding-top: 2.4rem;
   -webkit-line-clamp: 1;
   margin: 0;

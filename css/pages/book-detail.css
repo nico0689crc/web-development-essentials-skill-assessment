@@ -34,6 +34,7 @@
     "content" 
     "comment"
     "reviews";
+  width: 100%;
 }
 
 .book-detail > .book-detail__figure,
@@ -46,7 +47,6 @@
   justify-content: center;
   align-items: flex-start;
   margin: 0;
-  width: 100%;
   grid-area: figure;
 }
 
@@ -208,6 +208,7 @@
       "figure content" 
       "comment comment"
       "reviews reviews";
+    width: 100%;
   }
 
   .book-detail > .book-detail__content {
