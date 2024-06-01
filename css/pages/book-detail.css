@@ -67,7 +67,7 @@
 }
 
 .book-detail > .book-detail__content > .book-detail__synopsis {
-  text-align: center;
+  text-align: justify;
   color: var(--color-text-secondary);
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--color-border);

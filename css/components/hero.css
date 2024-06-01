@@ -15,25 +15,25 @@
 }
 
 .hero__background--home {
-  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/home/hero.jpg);
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://res.cloudinary.com/nico0689crc/image/upload/v1717230467/fremantle-library/assets/images/home/zej0tjprfktak7p4qot6.jpg);
 }
 
 .hero__background--help-you {
-  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/home/help-you.jpeg);
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://res.cloudinary.com/nico0689crc/image/upload/v1717230458/fremantle-library/assets/images/home/phczyr70qejopqkr3vnh.jpg);
 }
 
 .hero__background--contact-us {
-  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/contact/hero.jpeg);
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://res.cloudinary.com/nico0689crc/image/upload/v1717230461/fremantle-library/assets/images/contact/oqe9a3hywveyadzbufhz.jpg);
   background-position-x: right;
 }
 
 .hero__background--about-us {
-  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/about/hero.jpg);
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://res.cloudinary.com/nico0689crc/image/upload/v1717230470/fremantle-library/assets/images/about/vomoyi8oea0kzzavuogj.jpg);
   background-position-x: right;
 }
 
 .hero__background--books {
-  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(/assets/images/books/hero.jpeg);
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://res.cloudinary.com/nico0689crc/image/upload/v1717230466/fremantle-library/assets/images/books/igejpx9isdyhuybjwapj.jpg);
   background-position-x: right;
 }
 

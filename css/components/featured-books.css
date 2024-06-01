@@ -82,6 +82,7 @@
 
 .featured-books__item .featured-books__overview {
   font-size: 1.3rem;
+  text-align: justify;
   color: var(--color-text-secondary);
   font-weight: 200;
   -webkit-line-clamp: 4;
