@@ -25,6 +25,7 @@
   row-gap: 2rem;
   grid-area: content;
 }
+
 .error-page > .error-page__content a {
   font-weight: 300;
   font-size: 1.6rem;
@@ -32,15 +33,14 @@
 }
 
 .error-page > .error-page__content > .error-page__title {
-  color: var(--color-primary-main);
   text-align: center;
   font-size: 3.2rem;
 }
 .error-page > .error-page__content > .error-page__subtitle {
-  color: var(--color-primary-main);
   text-align: center;
   font-size: 3rem;
 }
+
 .error-page > .error-page__content > .error-page__text {
   margin: 0;
   text-align: center;

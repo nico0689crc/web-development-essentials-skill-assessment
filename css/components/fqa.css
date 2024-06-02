@@ -38,6 +38,7 @@
   padding: 2rem;
   border-bottom: 1px solid transparent;
   margin-top: 1rem;
+  transition: all 450ms ease-in;
 }
 
 .fqa > .fqa__items > .fqa__item > .fqa__item-question {
@@ -77,14 +78,16 @@
   color: var(--color-text-secondar);
   font-size: 1.6rem;
   font-weight: 400;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   margin: 0;
+  /* transition: max-height 100ms ease-out;x */
 }
 
 .fqa > .fqa__items > .fqa__item.fqa__item--open > .fqa__item-answer {
-  height: auto;
+  max-height: 10rem;
   overflow: visible;
+  transition: max-height 500ms ease-in;
 }
 
 @media screen and (min-width: 1100px) {
