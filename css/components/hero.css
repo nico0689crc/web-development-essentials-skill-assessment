@@ -15,7 +15,7 @@
 }
 
 .hero__background--home {
-  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://res.cloudinary.com/nico0689crc/image/upload/f_auto,q_auto/v1/fremantle-library/assets/images/home/zej0tjprfktak7p4qot6);
+  background-image: linear-gradient(rgba(22, 28, 36, 0.6), rgba(22, 28, 36, 0.6)), url(https://rgcopcorpweb103-cdn-endpoint.azureedge.net/-/media/Project/COP/COP/COP/Assets/Images-and-Video/CityofPerthLibrary1600x700.jpg?h=700&iar=0&w=1600&rev=7742715fee34473f9a6efbb6912b7f84&useCustomFunctions=1&centerCrop=1&hash=485384D6746CE91CD47DFF67704487C8);
 }
 
 .hero__background--help-you {
