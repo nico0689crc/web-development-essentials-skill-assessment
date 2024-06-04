@@ -85,7 +85,7 @@
 }
 
 .fqa > .fqa__items > .fqa__item.fqa__item--open > .fqa__item-answer {
-  max-height: 10rem;
+  max-height: 500rem;
   overflow: visible;
   transition: max-height 500ms ease-in;
 }

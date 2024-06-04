@@ -52,6 +52,7 @@
 
 .book-detail > .book-detail__figure > .book-detail__image {
   max-width: 40rem;
+  width: 100%;
   object-fit: contain;
   vertical-align: bottom;
 }
@@ -194,6 +195,7 @@
 
 .book-detail > .book-detail__reviews-list > .book-detail__review-item > .review-item__comment > .review-item__comment {
   font-size: 1.5rem;
+  text-align: justify;
   color: var(--color-text-secondary);
   margin: 0;
   font-weight: 300;
